@@ -25,4 +25,8 @@ class Game
   def tie?
     return self.over? ? true : false
   end
+
+  def winner
+    nil
+  end
 end
