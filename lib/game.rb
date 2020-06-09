@@ -15,11 +15,7 @@ class Game
       return false
     end
 
-    if @board.full?
-      true
-    else 
-      false
-    end
+    return @board.full? ? true : false
   end
 
   def tie?
