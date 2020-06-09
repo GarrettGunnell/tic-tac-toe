@@ -3,7 +3,6 @@ require_relative 'board'
 class Game
 
   def initialize(board = nil)
-    @over = false
     @board = board;
   end
 
@@ -12,6 +11,14 @@ class Game
   end
 
   def over?
-    @over
+    if @board == nil
+      return false
+    end
+
+    if @board.full?
+      true
+    else 
+      false
+    end
   end
 end
