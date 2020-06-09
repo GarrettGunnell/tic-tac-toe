@@ -21,4 +21,8 @@ class Game
       false
     end
   end
+
+  def tie?
+    return self.over? ? true : false
+  end
 end
